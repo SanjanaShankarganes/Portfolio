@@ -24,7 +24,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="mb-8"
         >
-          <div className="w-60 h-60 mx-auto mb-8 rounded-full bg-purple-600 p-1.5">
+          <div className="w-48 h-48 md:w-60 md:h-60 mx-auto mb-8 rounded-full bg-purple-600 p-1.5">
             <div className="w-full h-full rounded-full overflow-hidden bg-slate-900">
               <img 
                 src="/profile.jpeg" 
@@ -83,14 +83,14 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3 }}
-          className="flex flex-wrap gap-3 justify-center mb-12 max-w-2xl mx-auto"
+          className="flex flex-wrap gap-2 md:gap-3 justify-center mb-12 max-w-2xl mx-auto"
         >
           <motion.span 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1.4, type: "spring", stiffness: 100 }}
             whileHover={{ scale: 1.05 }}
-            className="px-4 py-2 bg-purple-500/20 rounded-full text-sm font-semibold border border-purple-500/30 cursor-default"
+            className="px-3 py-1.5 md:px-4 md:py-2 bg-purple-500/20 rounded-full text-xs md:text-sm font-semibold border border-purple-500/30 cursor-default"
           >
             💼 1 Year Experience
           </motion.span>
@@ -99,7 +99,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, type: "spring", stiffness: 100 }}
             whileHover={{ scale: 1.05 }}
-            className="px-4 py-2 bg-purple-500/20 rounded-full text-sm font-semibold border border-purple-500/30 cursor-default"
+            className="px-3 py-1.5 md:px-4 md:py-2 bg-purple-500/20 rounded-full text-xs md:text-sm font-semibold border border-purple-500/30 cursor-default"
           >
             🎓 CGPA: 8.85
           </motion.span>
@@ -108,7 +108,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1.6, type: "spring", stiffness: 100 }}
             whileHover={{ scale: 1.05 }}
-            className="px-4 py-2 bg-purple-500/20 rounded-full text-sm font-semibold border border-purple-500/30 cursor-default"
+            className="px-3 py-1.5 md:px-4 md:py-2 bg-purple-500/20 rounded-full text-xs md:text-sm font-semibold border border-purple-500/30 cursor-default"
           >
             🚀 23 Technologies
           </motion.span>
@@ -150,13 +150,13 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
-          className="flex gap-6 justify-center"
+          className="flex gap-4 md:gap-6 justify-center"
         >
           <motion.a
             href="https://github.com/SanjanaShankarganes"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl text-gray-300 hover:text-purple-400 transition-colors relative"
+            className="text-2xl md:text-3xl text-gray-300 hover:text-purple-400 transition-colors relative"
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
             initial={{ opacity: 0, y: 20 }}
@@ -169,7 +169,7 @@ const Hero = () => {
             href="https://linkedin.com/in/sanjana-shankarganesh"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl text-gray-300 hover:text-purple-400 transition-colors relative"
+            className="text-2xl md:text-3xl text-gray-300 hover:text-purple-400 transition-colors relative"
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
             initial={{ opacity: 0, y: 20 }}
@@ -180,7 +180,7 @@ const Hero = () => {
           </motion.a>
           <motion.a
             href="mailto:sanjanasankarganesh@gmail.com"
-            className="text-3xl text-gray-300 hover:text-purple-400 transition-colors relative"
+            className="text-2xl md:text-3xl text-gray-300 hover:text-purple-400 transition-colors relative"
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
             initial={{ opacity: 0, y: 20 }}

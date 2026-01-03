@@ -55,8 +55,8 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <div className="bg-slate-800/50 backdrop-blur-sm p-8 rounded-xl border border-purple-500/20">
-              <h3 className="text-2xl font-bold mb-6 text-center">Contact Information</h3>
+            <div className="bg-slate-800/50 backdrop-blur-sm p-6 md:p-8 rounded-xl border border-purple-500/20">
+              <h3 className="text-xl md:text-2xl font-bold mb-6 text-center">Contact Information</h3>
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <motion.a
@@ -67,14 +67,14 @@ const Contact = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ delay: 0.4 + index * 0.1 }}
-                    className="flex items-center gap-4 p-4 rounded-lg hover:bg-slate-700/50 transition-colors group"
+                    className="flex items-center gap-3 md:gap-4 p-3 md:p-4 rounded-lg hover:bg-slate-700/50 transition-colors group"
                   >
-                    <div className="text-3xl text-purple-400 group-hover:scale-110 transition-transform">
+                    <div className="text-2xl md:text-3xl text-purple-400 group-hover:scale-110 transition-transform">
                       {info.icon}
                     </div>
                     <div>
-                      <p className="text-sm text-gray-400">{info.label}</p>
-                      <p className="text-lg font-medium group-hover:text-purple-400 transition-colors">
+                      <p className="text-xs md:text-sm text-gray-400">{info.label}</p>
+                      <p className="text-sm md:text-lg font-medium group-hover:text-purple-400 transition-colors break-all">
                         {info.value}
                       </p>
                     </div>
@@ -83,9 +83,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-slate-800/50 p-8 rounded-xl border border-purple-500/30">
-              <h3 className="text-2xl font-bold mb-4 text-purple-400 text-center">Let's Collaborate & Build Something Great</h3>
-              <p className="text-gray-300 leading-relaxed text-center">
+            <div className="bg-slate-800/50 p-6 md:p-8 rounded-xl border border-purple-500/30">
+              <h3 className="text-xl md:text-2xl font-bold mb-4 text-purple-400 text-center">Let's Collaborate & Build Something Great</h3>
+              <p className="text-sm md:text-base text-gray-300 leading-relaxed text-center">
                 I'm actively seeking opportunities to contribute to innovative projects and dynamic teams. 
                 Whether you're looking for a dedicated full-stack developer, have a challenging project in mind, 
                 or simply wish to discuss potential collaborations, feel free to reach out.

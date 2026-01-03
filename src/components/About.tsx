@@ -50,7 +50,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative mb-16"
         >
-          <div className="relative bg-gradient-to-br from-slate-800/60 via-slate-800/40 to-transparent backdrop-blur-xl rounded-3xl p-10 border border-purple-500/30 overflow-hidden">
+          <div className="relative bg-gradient-to-br from-slate-800/60 via-slate-800/40 to-transparent backdrop-blur-xl rounded-3xl p-6 md:p-10 border border-purple-500/30 overflow-hidden">
             {/* Animated Background Elements */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -66,11 +66,11 @@ const About = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-1">
+                    <h3 className="text-xl md:text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-1">
                       Software Development Engineer
                     </h3>
-                    <p className="text-xl text-purple-400 font-bold">MachDatum Private Limited</p>
-                    <p className="text-sm text-gray-400 mt-1">
+                    <p className="text-lg md:text-xl text-purple-400 font-bold">MachDatum Private Limited</p>
+                    <p className="text-xs md:text-sm text-gray-400 mt-1">
                       📍 Coimbatore <span className="text-purple-500 mx-2">|</span> 📅 Jan 2025 - Present
                     </p>
                   </div>
@@ -81,38 +81,38 @@ const About = () => {
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <motion.div 
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="relative bg-gradient-to-br from-purple-500/20 to-purple-600/10 p-6 rounded-2xl border border-purple-500/50"
+                  className="relative bg-gradient-to-br from-purple-500/20 to-purple-600/10 p-4 md:p-6 rounded-2xl border border-purple-500/50"
                 >
                   <div className="absolute top-0 right-0 text-6xl opacity-10">⏱️</div>
-                  <FaClock className="text-4xl text-purple-400 mb-3" />
-                  <p className="text-4xl font-bold text-white mb-2">1+ Year</p>
-                  <p className="text-purple-300 font-semibold">Professional Experience</p>
+                  <FaClock className="text-3xl md:text-4xl text-purple-400 mb-3" />
+                  <p className="text-3xl md:text-4xl font-bold text-white mb-2">1+ Year</p>
+                  <p className="text-sm md:text-base text-purple-300 font-semibold">Professional Experience</p>
                 </motion.div>
 
                 <motion.div 
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="relative bg-gradient-to-br from-green-500/20 to-green-600/10 p-6 rounded-2xl border border-green-500/50"
+                  className="relative bg-gradient-to-br from-green-500/20 to-green-600/10 p-4 md:p-6 rounded-2xl border border-green-500/50"
                 >
                   <div className="absolute top-0 right-0 text-6xl opacity-10">📈</div>
-                  <FaChartLine className="text-4xl text-green-400 mb-3" />
-                  <p className="text-4xl font-bold text-white mb-2">75%</p>
-                  <p className="text-green-300 font-semibold">Efficiency Improvement</p>
+                  <FaChartLine className="text-3xl md:text-4xl text-green-400 mb-3" />
+                  <p className="text-3xl md:text-4xl font-bold text-white mb-2">75%</p>
+                  <p className="text-sm md:text-base text-green-300 font-semibold">Efficiency Improvement</p>
                 </motion.div>
 
                 <motion.div 
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="relative bg-gradient-to-br from-blue-500/20 to-blue-600/10 p-6 rounded-2xl border border-blue-500/50"
+                  className="relative bg-gradient-to-br from-blue-500/20 to-blue-600/10 p-4 md:p-6 rounded-2xl border border-blue-500/50"
                 >
                   <div className="absolute top-0 right-0 text-6xl opacity-10">⚡</div>
-                  <FaServer className="text-4xl text-blue-400 mb-3" />
-                  <p className="text-4xl font-bold text-white mb-2">20%</p>
-                  <p className="text-blue-300 font-semibold">Performance Boost</p>
+                  <FaServer className="text-3xl md:text-4xl text-blue-400 mb-3" />
+                  <p className="text-3xl md:text-4xl font-bold text-white mb-2">20%</p>
+                  <p className="text-sm md:text-base text-blue-300 font-semibold">Performance Boost</p>
                 </motion.div>
               </div>
 
               {/* Description */}
               <div className="mb-8">
-                <p className="text-gray-300 text-lg leading-relaxed">
+                <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                   Developing <span className="text-white font-bold">enterprise-grade solutions</span> with full-stack expertise. 
                   Delivered <span className="text-white font-bold">real-time applications</span>, digitized workflows, and 
                   <span className="text-white font-bold"> scalable architectures</span> that drive measurable business impact.
@@ -151,7 +151,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mb-20"
         >
-          <h3 className="text-3xl font-bold mb-8 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">
             Key <span className="gradient-text">Contributions</span>
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
@@ -161,11 +161,11 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ delay: 0.1 * index + 0.6 }}
-                className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-purple-500/20 card-hover"
+                className="bg-slate-800/50 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-purple-500/20 card-hover"
               >
-                <h4 className="text-xl font-bold text-white mb-3">{exp.project}</h4>
-                <p className="text-sm text-purple-400 font-semibold mb-3">{exp.tech}</p>
-                <p className="text-gray-300 text-sm leading-relaxed">{exp.achievement}</p>
+                <h4 className="text-lg md:text-xl font-bold text-white mb-3">{exp.project}</h4>
+                <p className="text-xs md:text-sm text-purple-400 font-semibold mb-3">{exp.tech}</p>
+                <p className="text-gray-300 text-xs md:text-sm leading-relaxed">{exp.achievement}</p>
               </motion.div>
             ))}
           </div>
@@ -177,16 +177,16 @@ const About = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          <h3 className="text-3xl font-bold mb-8 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">
             Education & <span className="gradient-text">Certifications</span>
           </h3>
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* Education */}
-            <div className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-purple-500/20">
+            <div className="bg-slate-800/50 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-purple-500/20">
               <div className="flex items-center gap-3 mb-6">
-                <FaGraduationCap className="text-3xl text-purple-400" />
-                <h4 className="text-xl font-bold text-purple-400">Education</h4>
+                <FaGraduationCap className="text-2xl md:text-3xl text-purple-400" />
+                <h4 className="text-lg md:text-xl font-bold text-purple-400">Education</h4>
               </div>
               <div className="space-y-4">
                 <div className="border-l-4 border-purple-500 pl-4 py-2">
@@ -206,10 +206,10 @@ const About = () => {
             </div>
 
             {/* Certifications */}
-            <div className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-purple-500/20">
+            <div className="bg-slate-800/50 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-purple-500/20">
               <div className="flex items-center gap-3 mb-6">
-                <FaCertificate className="text-3xl text-purple-400" />
-                <h4 className="text-xl font-bold text-purple-400">Certifications</h4>
+                <FaCertificate className="text-2xl md:text-3xl text-purple-400" />
+                <h4 className="text-lg md:text-xl font-bold text-purple-400">Certifications</h4>
               </div>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-purple-500/10 border border-purple-500/20">

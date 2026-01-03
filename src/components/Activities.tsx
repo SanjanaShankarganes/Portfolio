@@ -30,11 +30,11 @@ const Activities = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-purple-500/20"
+            className="bg-slate-800/50 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-purple-500/20"
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="text-3xl">📄</div>
-              <h4 className="text-xl font-bold text-purple-400">Paper Presentations</h4>
+              <div className="text-2xl md:text-3xl">📄</div>
+              <h4 className="text-lg md:text-xl font-bold text-purple-400">Paper Presentations</h4>
             </div>
             <div className="space-y-4">
               <div className="border-l-2 border-purple-500 pl-4">
@@ -61,11 +61,11 @@ const Activities = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-purple-500/20"
+            className="bg-slate-800/50 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-purple-500/20"
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="text-3xl">🏆</div>
-              <h4 className="text-xl font-bold text-purple-400">Leadership & Interests</h4>
+              <div className="text-2xl md:text-3xl">🏆</div>
+              <h4 className="text-lg md:text-xl font-bold text-purple-400">Leadership & Interests</h4>
             </div>
             <div className="space-y-3">
               <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-700/50 transition-colors">
@@ -105,4 +105,5 @@ const Activities = () => {
 }
 
 export default Activities
+
 
